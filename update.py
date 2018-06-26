@@ -11,9 +11,9 @@ cursor = connection.cursor()
 def update_prod():	
     prod_name = 'brush';
     prod_id = 10;	  
-    update_brush = "update products set name = 'brush' where id = 10"
+    update_brush = "update products set name = 'brush' where productcode = 555"
     cursor.execute(update_brush)
-    return 'prod_name'	
+    return prod_name	
 
 if __name__ == '__main__':
        app.run()
