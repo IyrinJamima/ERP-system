@@ -10,7 +10,7 @@ cursor = connection.cursor()
 @app.route('/produ',methods = ["GET"])
 def selectprod():
     name = 'dress';
-    cursor.execute("select * from products where name like '%s%',likeString " )
+    cursor.execute("select * from products where name like '%s%' " )
     connection.commit()
     return name
 	
